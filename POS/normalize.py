@@ -46,7 +46,7 @@ for i, line in enumerate(sys.stdin):
 		
 		elif words[0] in ['(', '[', '<', '{', '<<']:
 			words[0], words[1] = '-LRB-', '-lrb-'
-		elif words[0] in ['(', ']', '>', '}', '>>']:
+		elif words[0] in [')', ']', '>', '}', '>>']:
 			words[0], words[1] = '-RRB-', '-rrb-'
 		elif  words[0].find('.com') != -1 or words[0].find('.org') != -1 or words[0].find('.gov') != -1 or words[0].find('.htm') != -1:
 			words[0], words[1] = 'url', 'url'
