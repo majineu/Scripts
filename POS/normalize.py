@@ -1,12 +1,9 @@
 import sys
 import re
-
-
 quot = 0
 allUpper = 0
 sen = []
 totalUpper = 0
-
 
 def toLower(seq = []):
 	sys.stderr.write('\n----------------------\n' + '\n'.join(seq) + '\n\n')
